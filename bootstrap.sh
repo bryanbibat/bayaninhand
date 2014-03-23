@@ -9,7 +9,7 @@ sudo add-apt-repository ppa:brightbox/ruby-ng-experimental -y
 sudo apt-get update
 
 sudo apt-get install -y ruby2.1 ruby2.1-dev 
-sudo gem install bundler --no-ri --no-rdoc --verbose
+sudo gem2.1 install bundler --no-ri --no-rdoc --verbose
 
 cp /vagrant/config/vagrant/* /vagrant/config/
 
