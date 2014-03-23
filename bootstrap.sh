@@ -15,7 +15,7 @@ cp /vagrant/config/vagrant/* /vagrant/config/
 
 cd /vagrant
 
-bundle --binstubs --path=tmp/bundle --verbose --jobs 2
+bundle --binstubs --path=/home/vagrant/tmp/bundle --verbose --jobs 2
 
 bundle exec rake db:create
 bundle exec rake db:migrate
