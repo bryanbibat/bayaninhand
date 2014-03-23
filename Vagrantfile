@@ -12,6 +12,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "hashicorp/precise32"
   config.vm.provision :shell, :privileged => false, :path => "bootstrap.sh"
+  config.vm.provision :shell, :path => "bootstrap-nginx.sh"
   config.vm.network "forwarded_port", guest: 3000, host: 3001
   config.vm.network "forwarded_port", guest: 80, host: 8080
 
