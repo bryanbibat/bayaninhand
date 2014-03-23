@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'http://gems.bryanbibat.net'
 
 gem 'rails', '3.1.0'
 
@@ -46,6 +46,7 @@ end
 
 group :test do
   gem "cucumber-rails", "~> 1.1.1"
+  gem "nokogiri", "~> 1.6.1"
   gem "database_cleaner"
   gem "factory_girl"
   gem "launchy"
