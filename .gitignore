@@ -12,3 +12,4 @@ config/settings.yml
 *.swp
 public/system
 .DS_Store
+.vagrant/
