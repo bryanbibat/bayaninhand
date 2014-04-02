@@ -12,13 +12,15 @@ sudo apt-get install -y ruby2.1 ruby2.1-dev
 sudo gem2.1 install bundler --no-ri --no-rdoc --verbose
 
 cp /vagrant/config/vagrant/* /vagrant/config/
+rm /vagrant/config/nginx.conf
 
 cd /vagrant
 
+bundle config mirror.https://rubygems.org http://tokyo-m.rubygems.org/
 bundle --binstubs --path=/home/vagrant/tmp/bundle --verbose --jobs 2
 
-bundle exec rake db:create
-bundle exec rake db:migrate
-bundle exec rake db:seed
-bundle exec rake ts:rebuild
-bundle exec rake db:test:prepare
+bin/rake db:create
+bin/rake db:migrate
+bin/rake db:seed
+bin/rake ts:rebuild
+bin/rake db:test:prepare

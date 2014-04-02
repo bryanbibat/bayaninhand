@@ -1,4 +1,4 @@
-gem2.1 install passenger --no-ri --no-rdoc
+gem2.1 install passenger --no-ri --no-rdoc --verbose
 
 cd /tmp
 wget http://nginx.org/download/nginx-1.4.7.tar.gz
