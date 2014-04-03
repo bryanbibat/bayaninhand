@@ -1,2 +1,11 @@
 # Auto detect text files and perform LF normalization
 *        text=auto
+
+# Force shell scripts to use LF line endings
+*.sh     text eol=lf
+
+# Ignore all binary files
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
